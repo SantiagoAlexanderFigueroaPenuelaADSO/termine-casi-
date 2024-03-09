@@ -1,0 +1,583 @@
+@font-face {
+  font-family: "Reey regular";
+  src: url(Reey-Regular.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: url("Header Background.png.jpg");
+}
+
+/* Barra de navegación */
+.main-header {
+  position: relative;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar {
+  flex-grow: 1;
+  margin-right: 80px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.brand {
+  margin-right: 400px; /* Ajusta el espacio entre el logo y el texto */
+}
+
+.brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-box img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección 1 */
+.section1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.section1 h1 {
+  margin-bottom: 20px;
+  font-family: "Reey regular";
+
+  font-size: 6em; /* Ajusta el tamaño del h1 según tus preferencias */
+  color: white; /* Cambia el color del texto a blanco */
+}
+.section1 p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1em;
+}
+
+/* Estilos específicos para las imágenes de la primera sección */
+.section1 .image-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* Estilos para la nueva estructura HTML */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para la sección principal */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+}
+
+/* CSS para la sección izquierda */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand {
+  margin-right: 70px; /* Ajusta el espacio entre el logo y el texto */
+}
+
+.brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-section {
+  flex-grow: 1; /* Ajusta para ocupar el espacio restante */
+}
+
+.subtitle {
+  color: #fcf9f9; /* Cambia el color del subtítulo según tus preferencias */
+}
+
+.read-more {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-description {
+  color: #f6f3f3; /* Cambia el color del texto según tus preferencias */
+}
+
+.button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 100%; /* Las imágenes ocuparán el 100% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilo específico para la imagen de pasta */
+.pasta-img {
+  max-width: 850px; /* Tamaño máximo para la imagen de pasta */
+  height: auto;
+}
+
+/* section 2  */
+.section2 {
+  text-align: center;
+  background-color: #ffffff; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px; /* Añade espacio alrededor del contenido si es necesario */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Titulo__section2 {
+  font-size: 80px;
+  font-family: "Reey regular";
+
+}
+
+.section2 h1{
+  font-family: "Reey regular";
+
+}
+
+.section2 h2,
+.section2 p {
+  margin-bottom: 20px;
+  
+}
+
+/* Estilos específicos para las imágenes de la segunda sección */
+.section2 .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección de usuarios en Section 2 */
+.user-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff; /* Fondo blanco para Section 2 */
+  padding: 150px 20px 100px 20px;
+  width: 80vw;
+}
+
+/* Estilos para cada usuario en Section 2 */
+.section2 .user-box {
+  text-align: center;
+}
+
+.section__parrafo {
+  font-size: 20px;
+  width: 50vw;
+  text-align: center;
+}
+
+/* Estilos para el círculo de cada usuario en Section 2 */
+.section2 .user-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Estilos para la imagen dentro del círculo en Section 2 */
+.section2 .user-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el círculo */
+}
+
+/* Estilos para la descripción debajo del círculo en Section 2 */
+.user-description {
+  margin-top: 10px;
+  font-size: 20px;
+}
+/* Estilos para el botón "Show More" en Section 2 */
+.show-more-btn {
+  padding: 10px 30px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+.section_boton {
+  padding-bottom: 30px;
+}
+
+/* Estilos para la Section 3 */
+
+.center-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section3 .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para la Section 3 */
+.section3 {
+  text-align: center;
+  background-color: #2b2b2b; /* Cambia el color de fondo según tus preferencias */
+  padding: 50px 0px 120px 0px; /* Añade espacio alrededor del contenido si es necesario */
+  color: #ffffff; /* Cambia el color del texto según tus preferencias */
+}
+
+.center-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section3-content {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.left-section3 {
+  text-align: left;
+  padding: 0px 60px 0px 100px;
+}
+
+.contenedor__seccion3 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+/* Estilos para el título centrado en la parte superior */
+.section3-title {
+  margin-bottom: 20px;
+  
+}
+
+/* Estilos para el botón "Show More" en Section 3 */
+.section3 .show-more-btn {
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--font-size-button);
+  margin-top: 20px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+/* Estilos para la Section 4 */
+.section4 {
+  background-color: #ffffff; /* Fondo blanco para Section 4 */
+  padding: 50px;
+  text-align: center;
+}
+
+.discount-container,
+.promo-container {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+}
+
+.discount-container,
+.promo-container {
+  justify-content: space-between;
+}
+
+.discount-content,
+.promo-content {
+  width: 50%; /* Ocupar la mitad del contenedor */
+  text-align: left;
+  padding: 0 20px; /* Agregar espacio alrededor del texto */
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+.discount-image,
+.promo-image {
+  width: 500px;
+  height: auto;
+  padding-left: 100px;
+}
+
+.discount-image {
+  order: -1; /* Cambiar el orden de la imagen a la izquierda */
+}
+
+.promo-image {
+  order: 1; /* Cambiar el orden de la imagen a la derecha */
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: var(
+    --font-size-button
+  ); /* Utiliza la variable para el tamaño de la fuente */
+  margin: 10px 0;
+}
+.description,
+.discount-percent,
+.promo-title,
+.discount-content h1,
+.promo-content h2,
+.promo-content p {
+  color: #333333;
+}
+
+/* section5 */
+.section5 {
+  background: url("Header Background.png.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.section5-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section5 h1 {
+  font-family: "Reey regular";
+  font-size: 2.7em; 
+  margin-bottom: 30px;
+}
+
+.section5-description {
+  font-family: var(--font-family);
+  font-size: var(--font-size-description);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.section_div {
+  display: flex;
+  width: 1300px;
+}
+
+.section5-image2 {
+  margin-top: -220px;
+  display: flex;
+  align-items: end;
+}
+.section5_imagen2 {
+  padding-left: 400px;
+}
+
+.section_texto-div {
+  padding-left: 100px;
+}
+
+.section5-image {
+  margin-bottom: -300px;
+}
+
+/* section6  */
+.section6 {
+  background-color: #f6f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloque1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+  gap: 6rem;
+}
+
+.texto_bloque {
+  width: 450px;
+}
+
+.titulo__bloque p {
+  font-family: "Reey regular";
+  font-size: 72px;
+}
+
+.texto_seccion6 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  width: 900px;
+  padding-top: 15rem;
+  font-weight: 400;
+  justify-self: center;
+}
+
+.texto_final {
+  font-weight: 600;
+}
+
+/*section7*/
+.section7 {
+  background-color: #242525;
+  height: 1000px;
+  width: 99.1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondo_section7 {
+  position: absolute;
+}
+
+.contenedor__section7 {
+  z-index: 0;
+}
+.titulo_section7 {
+  padding-top: 15rem;
+  color: white;
+  font-size: 46px;
+}
+
+.texto_section7 {
+  color: white;
+  font-size: 24px;
+}
+
+.form_section7 {
+  display: flex;
+}
+
+#correo {
+  width: 600px;
+  height: 60px;
+  font-size: 24px;
+  padding: 24px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.boton_form {
+  background-color: #464645;
+  height: 60px;
+  width: 200px;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: absolute;
+  left: 55%;
+}
+
+/*footer*/
+.footer {
+  background-color: white;
+  height: 700px;
+  display: flex;
+  padding-top: 400px;
+  font-size: 28px;
+  gap: 80px;
+}
+
+.titulo_bloque1 {
+  font-weight: 200;
+  font-size: 48px;
+}
+
+.imagen_bloque1 img {
+  width: 45px;
+}
+
+.titulo_bloque2 {
+  font-weight: 200;
+  font-size: 48px;
+}
+.titulo_bloque3 {
+  font-weight: 200;
+  font-size: 48px;
+}
+.titulo_bloque4 {
+  font-weight: 200;
+  font-size: 48px;
+}
+
+.bloque1_footer {
+  padding-left: 120px;
+  padding-right: 280px;
+}
+
+.texto_bloque1 {
+  width: 650px;
+  font-size: 28px;
+}
